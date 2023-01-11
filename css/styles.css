@@ -4,6 +4,7 @@
   --blue-font-color: #2196f3;
   --white-joint-color: #ffffff;
   --footer-color: #ffffff60;
+  --footer-icon: #FFFFFF10;
   --black-font-color: #000;
   --buttons-portfolio-color: #ffffff25;
   --background-block-color: #2f303a;
@@ -258,7 +259,7 @@ h5 {
 }
 
 .contacts .item:not(:last-child) {
-  margin-right: 50px;
+  margin-right: 30px;
 }
 
 .page-header {
@@ -272,7 +273,7 @@ h5 {
   flex: 1;
   align-items: center;
   margin-left: 93px;
-  }
+}
 
 .contacts {
   display: flex;
@@ -361,3 +362,101 @@ section {
   padding: 20px 24px 20px 24px;
   border-color: var(--border-card-color);
 }
+
+.contact-icon {
+  display: flex;
+  margin-right: 10px;
+  height: 100%;
+}
+.contact-header__mail:hover,
+.contact-header__mail:focus,
+.contact-header__phone:hover,
+.contact-header__phone:focus {
+  --color3: var(--blue-font-color);
+  fill: var(--color3);
+  cursor: pointer;
+}
+
+.contact-header__mail {
+  display: flex;
+  margin-right: 30px;
+  height: 100%;
+}
+
+.contact-header__phone {
+  display: flex;
+  margin-right: 0;
+  height: 100%;
+}
+
+.contact-details .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.team-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.team-icon:not(:last-child) {
+  margin-right: 10px;
+}
+
+.team-icon__link:hover {
+  --color4: var(--blue-font-color);
+  fill: var(--color4);
+  --color5: var(--white-joint-color);
+  fill: var(--color5);
+}
+
+/* footer */
+
+.footer-icons {
+  display: flex;
+
+ 
+}
+
+.footer-icon:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-icon__link:hover,
+.footer-icon__link:focus {
+  --color4: var(--blue-font-color);
+  fill: var(--color4);
+  --color5: var(--white-joint-color);
+  fill: var(--color5);
+}
+.footer-media {
+ display: flex;
+  margin-left: 70px;
+  flex-direction: column;
+  
+}
+  
+ 
+.footer-contact {
+  display: flex;
+}   
+  
+
+.footer-media__title {
+  color: var(--white-joint-color);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+
+.footer-info {
+  display: inline-block;
+} 
+
+.footer-icon__link {
+  --color4: var(--footer-icon);
+  fill: var(--color4);
+  --color5: var(--white-joint-color);
+  fill: var(--color5);
+}
+
