@@ -4,13 +4,14 @@
   --blue-font-color: #2196f3;
   --white-joint-color: #ffffff;
   --footer-color: #ffffff60;
-  --footer-icon: #FFFFFF10;
+  --footer-icon: #ffffff10;
   --black-font-color: #000;
   --buttons-portfolio-color: #ffffff25;
   --background-block-color: #2f303a;
   --background-team-color: #f5f4fa;
   --border-header-color: #ececec;
   --border-card-color: #eeeeee;
+  --area-color: #f5f4fa;
 }
 
 body {
@@ -152,6 +153,16 @@ body,
   text-align: center;
   padding: 200px 0;
   background-color: var(--background-block-color);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4) 0%,
+      rgba(47, 48, 58, 0.4) 50%
+    ),
+    url(../images/designers-in-the-office.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 .footer-block {
   padding-top: 60px;
@@ -199,6 +210,9 @@ body,
 .switch:hover {
   background-color: var(--blue-font-color);
   color: var(--white-joint-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 .switch {
   font-family: "Roboto", sans-serif;
@@ -298,7 +312,9 @@ section {
 
 .team-list {
   text-align: center;
-  border-radius: 0 0 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
   background-color: var(--white-joint-color);
 }
 
@@ -347,6 +363,14 @@ section {
   background-color: var(--white-joint-color);
 }
 
+.card-range:hover,
+.card-range:focus {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  cursor: pointer;
+}
+
 .card-image {
   display: block;
 }
@@ -374,6 +398,8 @@ section {
 .contact-header__phone:focus {
   --color3: var(--blue-font-color);
   fill: var(--color3);
+  color: var(--blue-font-color);
+
   cursor: pointer;
 }
 
@@ -414,8 +440,6 @@ section {
 
 .footer-icons {
   display: flex;
-
- 
 }
 
 .footer-icon:not(:last-child) {
@@ -430,17 +454,14 @@ section {
   fill: var(--color5);
 }
 .footer-media {
- display: flex;
+  display: flex;
   margin-left: 70px;
   flex-direction: column;
-  
 }
-  
- 
+
 .footer-contact {
   display: flex;
-}   
-  
+}
 
 .footer-media__title {
   color: var(--white-joint-color);
@@ -448,10 +469,9 @@ section {
   margin-bottom: 20px;
 }
 
-
 .footer-info {
   display: inline-block;
-} 
+}
 
 .footer-icon__link {
   --color4: var(--footer-icon);
@@ -460,3 +480,59 @@ section {
   fill: var(--color5);
 }
 
+.introduction-area {
+  width: 270px;
+  height: 120px;
+  background-color: var(--area-color);
+  border-radius: 4px;
+  margin-bottom: 30px;
+  margin-right: 0;
+  position: relative;
+}
+
+.introduction-icon {
+  display: block;
+  height: 50%;
+  width: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+.customers-area {
+  height: 92px;
+  width: 170px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  position: relative;
+}
+
+.customers-icon {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+.customers-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.customers-area:hover,
+.customers-area:focus {
+  border: 1px solid #2196f3;
+  cursor: pointer;
+  --color5: var(--blue-font-color);
+  fill: var(--color5);
+}
