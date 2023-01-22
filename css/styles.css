@@ -41,7 +41,8 @@ body,
 .address-mail:hover,
 .address-mail:focus,
 .address-phone:hover,
-.address-phone:focus {
+.address-phone:focus,
+.contact-icon {
   color: var(--blue-font-color);
 }
 .mail,
